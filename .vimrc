@@ -179,7 +179,8 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
-let g:airline_theme='solarized'
+"let g:airline_theme='solarized'
+let g:airline_theme='molokai'
 set t_Co=256
 
 :set smartcase
@@ -187,8 +188,9 @@ set t_Co=256
 :set noantialias
 
 " Color scheme
-"colorscheme pyte
-set background=dark
+colorscheme molokai
+"colorscheme solarized
+"set background=dark
 set encoding=utf-8
 
 " Highlight line number of where cursor currently is
@@ -297,3 +299,9 @@ endif
 " Can be typed even faster than jj.
 :imap jk <Esc>
 :imap kj <Esc>
+
+"Tagbar
+nmap <F8> :TagbarToggle<CR>
+
+"CTRLP
+let g:ctrlp_working_path_mode = '0'
